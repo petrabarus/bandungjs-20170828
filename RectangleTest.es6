@@ -18,6 +18,8 @@ describe('Rectangle', () => {
 
         it('can be changed', () => {
           //
+          rectangle.width = 40;
+          expect(rectangle.width).to.equal(40);
         });
     });
 });
