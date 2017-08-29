@@ -18,6 +18,13 @@ describe('Rectangle', () => {
 
         it('can be changed', () => {
           //
+          rectangle.width = 40;
+          expect(rectangle.width).to.equal(40);
+        });
+
+        it('throws exception', () => {
+            expect(() => {rectangle.width = 'ABC'})
+                .to.throw('"width" must be a number.');
         });
     });
 });
